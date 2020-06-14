@@ -11,10 +11,10 @@ const FormWa = () => {
     };
 
   return (
-    <>
+    <div className="container-form">
         <form onSubmit={onSubmit} className="form">
             <input type="number" 
-                className="input-nnumbre" 
+                className="input-numbre" 
                 name="numbre" 
                 value={numbre}
                 onChange={(e) => setNumbre(e.target.value)}
@@ -30,7 +30,7 @@ const FormWa = () => {
                 Send
             </button>
         </form>
-    </>
+    </div>
   );
 };
 

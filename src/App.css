@@ -1,3 +1,39 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 20px
+}
+
+footer {
+  text-align: center;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+  max-width: 400;
+}
+
 .layout {
-  height: 100vh
+  align-items: center;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+}
+
+.input-numbre {
+  margin: 10px;
+  padding: 8px
+}
+
+.input-message {
+  margin: 10px;
+  padding: 8px
+}
+
+.submit {
+  margin: 10px;
+  padding: 8px
 }
