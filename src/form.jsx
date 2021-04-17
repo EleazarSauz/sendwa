@@ -28,6 +28,12 @@ const FormWa = () => {
         window.open(data, '_blank')
     };
 
+    const getData = async () => { 
+        const get = await fetch('http://54.88.171.247/api/customer/')
+        const parse = await get.json()
+        console.log(parse)
+      }
+
     const isMobile = () => {
         const toMatch = [
             /Android/i,
@@ -77,7 +83,7 @@ const FormWa = () => {
                     className="input-numbre-phone" 
                     name="numbre"
                     value={phone.number}
-                    onChange={(e) => setPhone({...phone, number: e.target.value})}
+                    onChange={(e) => getData()}
                 />
             </div>
             <textarea 
